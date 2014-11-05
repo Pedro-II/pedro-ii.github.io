@@ -1,0 +1,20 @@
+
+			<div id="page-meta" class="t30">
+				<p>
+					<span class="entypo entypo-32">&#128197;</span> <span class="pr20">{{ page.date | date: "%d.%m.%Y" }}</span>
+					{% if page.categories %}<span class="entypo entypo-32">&#128193;</span> <span class="pr20">{{ page.categories | join: ' · ' | upcase }}{% endif %}</span>
+					<span class="pr20">{% for tag in page.tags %}<span class="entypo entypo-32">&#59148;</span><span class="pr10">{{tag}}</span> {% endfor %}</span>
+				</p>
+
+
+				<div id="post-nav" class="row">
+				
+				{% if page.previous.url %} 
+					<div class="small-5 columns"><a class="button small radius prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a></div><!-- /.small-4.columns -->
+				{% endif %} 
+					<div class="small-2 columns text-center"><a class="radius button small" href="{{ site.url }}/blog/archive/" title="Blog Archive">{{ site.data.language.archive }}</a></div><!-- /.small-4.columns -->
+				{% if page.next.url %} 
+					<div class="small-5 columns text-right"><a class="button small radius next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a></div><!-- /.small-4.columns -->
+				{% endif %} 
+				</div>
+			</div><!--  /.page-meta -->

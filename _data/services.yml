@@ -1,0 +1,16 @@
+- menu_name: "Services"
+
+- name: "Kontakt"
+  url: "/kontakt/"
+  class: "services-contact"
+  title: "Kontakt"
+
+- name: "RSS"
+  url: "/feed.xml"
+  class: "rss-link"
+  title: "Subscribe to RSS"
+
+- name: "sitemap.xml"
+  url: "/sitemap.xml"
+  class: "sitemap-link"
+  title: "Sitemap for Google Webmastertools"

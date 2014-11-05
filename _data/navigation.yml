@@ -1,0 +1,20 @@
+- title: Start
+  url: "/index.html"
+  side: left
+
+- title: "Über den e.V."
+  url: "/ueber-missionshilfe-pedro-ii/"
+  side: left
+
+- title: "Neues aus Pedro II"
+  url: "/neues/"
+  side: left
+  dropdown:
+  - title: "Ponte Magazin"
+    url: "/ponte-magazin/"
+  - title: "CF-Mandacaru.org"
+    url: "http://cg-mandacaru.org"
+
+- title: "Kontakt"
+  url: "/kontakt/"
+  side: right
