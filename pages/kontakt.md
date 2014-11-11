@@ -1,16 +1,10 @@
 ---
 layout: page
-title: "Contact"
-subheadline: "Wufoo-powered contact forms"
-description: "Get in touch with me? Use the contact form."
-permalink: "/contact/"
+title: "Kontaktformular"
+subheadline: "Kontaktieren Sie uns"
+description: "Sie haben Fragen? Schreiben Sie uns und füllen Sie das Kontaktformular aus."
+permalink: "/kontakt/"
 ---
-If you need a fabulous contact form for your website, I suggest you use [Wufoo][1]. You can use three forms for free, you get no spam and if you get more than 100 entries you have to pay.
 
-<div class="panel">
-<iframe width="100%" height="650" frameborder="0" scrolling="no" src="https://phlowmedia.wufoo.com/embed/z7x3k1/"></iframe>
-</div>
+<iframe height="827" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none"  src="https://pedrosegundo.wufoo.com/embed/z7j6sno0c4rbjx/"><a href="https://pedrosegundo.wufoo.com/forms/z7j6sno0c4rbjx/">Zum Kontaktformular</a></iframe>
 
-
-
- [1]: http://www.wufoo.com/

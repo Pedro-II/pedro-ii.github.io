@@ -6,15 +6,26 @@
   url: "/ueber-missionshilfe-pedro-ii/"
   side: left
 
-- title: "Neues aus Pedro II"
-  url: "/neues/"
+- title: "Projekte"
+  url: "/projekte/"
   side: left
-  dropdown:
-  - title: "Ponte Magazin"
-    url: "/ponte-magazin/"
-  - title: "CF-Mandacaru.org"
-    url: "http://cg-mandacaru.org"
+
+- title: "Spenden"
+  url: "/spenden/"
+  side: left
+
+- title: "Neues"
+  url: "/ponte-magazin/"
+  side: left
+
+- title: "Partner"
+  url: "/partner/"
+  side: left
 
 - title: "Kontakt"
   url: "/kontakt/"
+  side: left
+
+- title: "Impressum"
+  url: "/impressum/"
   side: right

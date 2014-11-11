@@ -20,7 +20,7 @@
 
 					<div class="small-6 medium-3 large-3 large-offset-1 columns">
 						<nav>
-							<ul class="no-bullet shadow-black sans">
+							<ul class="no-bullet shadow-black">
 							{% for service_item in site.data.services %}
 								{% if service_item.url contains 'http' %}
 									{% assign domain = '' %}
@@ -29,7 +29,7 @@
 								{% endif %}
 
 								{% if forloop.first == true %}
-									<li class="shadow-black font-size-h5 sans">{{ service_item.menu_name }}</li>
+									<li class="shadow-black font-size-h5 serif">{{ service_item.menu_name }}</li>
 								{% else %}
 									<li {% if service_item.class %}class="{{ service_item.class }}" {% endif %}>
 										<a href="{{ domain }}{{ service_item.url }}" {% if service_item.url contains 'http' %}target="_blank" {% endif %} title="{{ service_item.title }}">{{ service_item.name }}</a>
@@ -44,10 +44,6 @@
 					<div class="small-6 medium-3 large-3 columns">
 								<h5 class="shadow-black">{{ site.data.language.thank_you }}</h5>
 								<ul class="no-bullet shadow-black">
-									<li><a href="http://entypo.com/">Icons by Daniel Bruce</a></li>
-									<li><a href="http://foundation.zurb.com/">Built on Foundation</a></li>
-									<li><a href="http://unsplash.com/">Images by Unsplash</a></li>
-									<li><a href="http://srobbin.com/jquery-plugins/backstretch/">Using Backstretch by Scott Robbin</a></li>
 								</ul>
 					</div><!-- /.large-3.columns -->
 				</div><!-- /.row -->
@@ -59,7 +55,7 @@
 				<nav class="row">
 					<section id="subfooter-left" class="b30 small-12 medium-6 columns">
 						<ul class="inline-list">
-							<li>We &hearts; <a style="display:inline;" href="http://jekyllrb.com/" target="_blank">Jekyll</a> &amp; <a style="display:inline;" href="http://phlow.github.io/feeling-responsive/">Feeling Responsive</a> </li>
+							<li><a style="display:inline;" href="http://phlow.de/" target="_blank">Webdesign</a> &amp; <a style="display:inline;" href="http://phlow.github.io/feeling-responsive/">Grafik Design</a> &amp; <a style="display:inline;" href="http://entypo.com/">Icons</a></li>
 						</ul>
 					</section>
 

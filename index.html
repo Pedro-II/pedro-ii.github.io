@@ -1,9 +1,9 @@
 ---
 layout: default
 format: blog-index
-title: "Feeling Responsive – A Jekyll Theme Based On Foundation"
+title: "Missionshilfe Pedro II Brasilien e.V."
 image:
-    header: "header_unsplash_12.jpg"
+    header: "startbild-pedro-ii.jpg"
 ---
 <div id="header-home">
     <div class="row">
@@ -17,9 +17,9 @@ image:
 
     <div class="medium-4 columns">
     	<a href="{{ site.url }}/blog/"><img src="{{ site.url }}/images/unsplash_4-303x182.jpg" alt=""></a>
-        <h2 class="font-size-h3">{{ site.data.language.blog }}</h2>
+        <h2 class="font-size-h3">Über unseren e.V.</h2>
     	<p>
-    		Every good portfolio website has a blog with fresh news, thoughts and developments of your activities. <em>Feeling Responsive</em> offers you a fully functional blog, too. With an <a href="{{ site.url }}/blog/archive/">archive page</a> to give readers a quick overview of all your posts.
+    		Text
     	</p>
         
         <p><a class="button tiny radius" href="{{ site.url }}/blog/">{{ site.data.language.more }}</a></p>
@@ -28,151 +28,28 @@ image:
 
 
     <div class="medium-4 columns">
-        <a href="{{ site.url }}/about/"><img src="{{ site.url }}/images/unsplash_8-303x182.jpg" alt=""></a>
+        <a href="{{ site.url }}/spenden/"><img src="{{ site.url }}/images/unsplash_8-303x182.jpg" alt=""></a>
         
-        <h2 class="font-size-h3">Why use this theme?</h2>
+        <h2 class="font-size-h3">Spenden &amp; Unterstützen</h2>
 
         <p>
-            <em>Feeling Responsive</em> is heavily built on <a href="http://foundation.zurb.com/">Foundation</a>, the fabulous responsive webdesign framework by Zurb. It supports a 12-column grid, persuades you with beautiful <a href="{{ site.url }}/design/typography/">typography</a> and is heavily optimized for speed.
+            Text
         </p>
 
-        <p><a class="button tiny radius" href="{{ site.url }}/about/">{{ site.data.language.more }}</a></p>
+        <p><a class="button tiny radius" href="{{ site.url }}/ueber-missionshilfe-pedro-ii/">{{ site.data.language.more }}</a></p>
     </div><!-- /.medium-4.columns -->
 
 
     <div class="medium-4 columns">
         <a href="{{ site.url }}/design/portfolio/"><img src="{{ site.url }}/images/github-303x182.jpg" alt=""></a>
-        <h2 class="font-size-h3">Download Theme</h2>
+        <h2 class="font-size-h3">Unser Ponte Magazin</h2>
         <p>
-            <em>Feeling Responsive</em> is totally free and licensed under the MIT License. You can make it your own and do with it what you want. Grab your copy or clone it at GitHub and start your website with it. Then tell me via <a href="http://twitter.com/phlow">Twitter @phlow</a>.
+            Text
         </p>
 
-        <p><a class="button tiny radius" href="https://github.com/Phlow/feeling-responsive/">Download @ GitHub ›</a></p>
+        <p><a class="button tiny radius" href="{{ site.url }}/ponte-magazin/">Ponte Magazin lesen ›</a></p>
 
     </div><!-- /.medium-4.columns -->
 
 </div><!-- /.row -->
 
-
-<div class="row t50 b20 homepage">
-    <div class="small-12 columns">
-        {% for post in site.posts limit:1 %}
-            {% if post.image.homepage %}
-                <p>
-                    <a href="{{ site.url }}{{ post.url }}" title="{{ post.title escape_once }}"><img src="{{ site.url }}/images/{{ post.image.homepage }}" alt="{{ page.title escape_once }}"></a>
-                </p>
-
-                {% if post.image.url && post.image.credit %}
-                    <p class="text-right caption">
-                        <a href="{{ post.image.url }}">{{ post.image.credit }}</a>
-                    </p>
-                {% endif %}
-            {% elsif post.image.homepage == NULL %}
-                <h2>{{ site.data.language.new_blog_entries }}</h2>
-            {% endif %}
-        {% endfor %}
-    </div><!-- /.small-12.columns -->
-</div><!-- /.row -->
-
-
-
-
-<div class="row">
-    <div class="medium-6 columns">
-        {% for post in site.posts limit:1 %}
-            <p class="subheadline">{% if post.subheadline %}{{ post.subheadline }}{% endif %}</p>
-            <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
-
-            <p>
-            {% if post.meta_description %}{{ post.meta_description | strip_html | escape }}{% elsif post.description %}{{ post.description | strip_html | escape }}{% endif %}
-            <a href="{{ site.url }}{{ post.url }}" title="Read {{ post.title escape_once }}"><strong>{{ site.data.language.read_more }}</strong></a>
-            </p>
-        {% endfor %}
-    </div><!-- /.medium-5.columns -->
-
-
-    <div class="medium-6 columns">
-        <p><strong>{{ site.data.language.more_articles }}</strong></p>
-        {% include list-posts.html entries='3' offset='1' %}
-    </div><!-- /.medium-7.columns -->
-</div><!-- /.row -->
-
-=======
-<!doctype html>
-<html class="no-js" lang="de">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Phlow</title>
-
-<link href='http://fonts.googleapis.com/css?family=Roboto:900,300,700' rel='stylesheet' type='text/css'>
-
-  <style type="text/css">
-body {
-  background: #222;
-color: #fabb00;
-text-shadow: rgba(0, 0, 0, 0.498039) 0px 1px 3px;
-}
-a {
-  text-decoration: none;
-  border-bottom: 1px dotted #4b4b4d;
-color: #aa0132;
-}
-a:hover {
-  border-bottom: 3px solid #aa0132;
-
-}
-.wrapper {
-  margin: 0 auto;
-  width: 620px;
-font-weight: 300;
-font-family: Roboto, 'Neue Helvetica', Helvetica, Arial;
-}
-dt { font-weight: 700; font-size: 1.5em; padding-bottom: 10px; }
-dd { margin: 0 0 20px 0;}
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-li {
-  display: inline;
-}
-h1 { 
-  margin: 100px 0 0 0;
-font-weight: 900;
-font-family: Roboto, 'Neue Helvetica', Helvetica, Arial;
-font-size: 14em;
-color: #fabb00;
-
-
-  text-shadow: -10px 10px 0px #aa0132,
-                 -20px 20px 0px #771e1e,
-                 -30px 30px 0px #4b4b4d;
-}
-  </style>
-</head>
-<body>
-<div class="wrapper">
-  <h1>Phlow</h1>
-  <ul>
-    <li>
-    <a href="http://www.youtube.com/PhlowMedia" target="_blank" id="social-youtube" title="Videos, Video-Anleitungen und Filme von Phlow auf YouTube">YouTube</a>&nbsp;&nbsp;&middot;&nbsp;</li>
-    <li>
-    <a href="http://twitter.com/phlow" target="_blank" id="social-twitter" title="Immer das Neuste von Phlow gibt es auf Twitter">Twitter</a>&nbsp;&nbsp;&middot;&nbsp;</li>
-    <li>
-    <a href="http://www.facebook.com/phlow.media" target="_blank" id="social-facebook" title="Lass uns Freunde sein!">Facebook</a>&nbsp;&nbsp;&middot;&nbsp;</li>
-    <li>
-    <a href="http://soundcloud.com/phlow" target="_blank" id="social-soundcloud" title="Sounds und Downloads und mehr">Soundcloud</a>&nbsp;&nbsp;&middot;&nbsp;</li>
-    <li>
-    <a href="http://github.com/phlow" target="_blank" id="social-github" title="Code und mehr...">GitHub</a>&nbsp;&nbsp;&middot;&nbsp;</li>
-    <li>
-    <a href="http://instagram.com/phlowmedia" target="_blank" id="social-instagram" title="Bilder und Impressionen mit und ohne Filter...">Instagram</a>&nbsp;&nbsp;&middot;&nbsp;</li>
-    <li>
-    <a href="http://www.mixcloud.com/phlow/" target="_blank" id="social-mixcloud" title="Mixe, was sonst?">Mixcloud</a></li>
-    </ul>
-</div>
-
-</body>
-</html>
->>>>>>> FETCH_HEAD
