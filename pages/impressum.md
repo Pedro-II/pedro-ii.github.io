@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Impressum"
+title: Impressum
 subheadline: ""
 description: ""
-permalink: "/impressum/"
+permalink: /impressum/
+published: true
 ---
 
-
-
+Hier kommt das Impressum hin.
